@@ -6,7 +6,7 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    @campaign = Campaign.find(params[:list_id])
+    @campaign = Campaign.find(params[:campaign_id])
     @review = @campaign.reviews.new(review_params)
     if @review.save
       redirect_to campaign_path(@review.campaign)

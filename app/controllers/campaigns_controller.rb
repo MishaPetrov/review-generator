@@ -17,7 +17,7 @@ class CampaignsController < ApplicationController
   def create
     @campaign = Campaign.new(campaign_params)
     if @campaign.save
-      redirect_tpo campaigns_path
+      redirect_to campaigns_path
     else
       render :new
     end
