@@ -1,0 +1,29 @@
+<h1><%= @campaign.name %></h1>
+
+<% if @campaign.reviews.any? %>
+  <h5>Here are reviews for this campaign</h5>
+  <table class="campaigns-list">
+    <tr>
+      <th>ID</th>
+      <th>Review</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <% @campaign.reviews.each do |review| %>
+    <tr>
+      <td><%= @review.id %></td>
+      <td><%= @review.content %></td>
+      <td><%= link_to "Edit", edit_campaign_review_path(@campaign, review) %>
+      <td><%= link_to "Delete", list_task_path(@campaign, review), :data => {:confirm => "Are you sure?", :method => "delete"} %></td>
+    </tr>
+    <% end %>
+  </table>
+<% else %>
+  <p>There are no reviews yet!</p>
+<% end %>
+
+<p><%= link_to "Generate a new review", new_campaign_review_path(@campaign) %></p>
+<p><%= link_to "Delete Campaign", campaign_path(@campaign),
+                        :data => {:confirm => "Are you sure?",
+                                       :method => "delete"} %></p>
+<p><%= link_to "Return to your campaigns", campaigns_path %></p>
