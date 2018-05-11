@@ -24,6 +24,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'jquery-rails'
+
+gem 'devise'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -45,6 +47,8 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
+  gem "factory_bot_rails", "~> 4.0"
+  gem 'simplecov', require: false
 end
 
 group :development do

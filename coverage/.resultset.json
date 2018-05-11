@@ -1,0 +1,57 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Guest/Desktop/capstone/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/capstone/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Guest/Desktop/capstone/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Guest/Desktop/capstone/app/controllers/application_controller.rb": [
+        0,
+        0
+      ],
+      "/Users/Guest/Desktop/capstone/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/Guest/Desktop/capstone/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Guest/Desktop/capstone/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/Guest/Desktop/capstone/app/models/campaign.rb": [
+        0,
+        0,
+        null,
+        0,
+        0,
+        0
+      ],
+      "/Users/Guest/Desktop/capstone/app/models/review.rb": [
+        0,
+        0,
+        null,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1526074786
+  }
+}
