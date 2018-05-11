@@ -1,0 +1,7 @@
+<%= render('layouts/errors', :object => @review) %>
+
+<%= form_for [@campaign, @review] do |f| %>
+  <%= f.label :length %>
+  <%= f.range_field :length, :value=> 100, :step => 10, :in => 20..500 %>
+  <p><%= f.submit %></p>
+<% end %>
