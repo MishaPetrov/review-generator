@@ -23,6 +23,26 @@ class CampaignsController < ApplicationController
     end
   end
 
+  def edit
+    @campaign = Campaign.find(params[:id])
+    render :edit
+  end
+
+  def update
+    @campaign = Campaign.find(params[:id])
+    if @campaign.update(campaign_params)
+      redirect_to
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @campaign = Campaign.find(params[:id])
+    @campaign.destroy
+    redirect_to campaigns_path
+  end
+
 private
   def campaign_params
     params.require(:campaign).permit(:name, :type_name, :specialization, :user_id)

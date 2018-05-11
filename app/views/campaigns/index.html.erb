@@ -8,13 +8,16 @@
     <th>Number of Reviews</th>
     <th>Edit</th>
     <th>Delete</th>
+  </tr>
   <% @campaigns.each do |campaign| %>
-  <td><%= link_to campaign.name campaign_path(campaign)%></td>
-  <td><%= campaign.type_name %></td>
-  <td><%= campaign.specialization %></td>
-  <td><%= campaign.reviews.count %></td>
-  <td><%= link_to "Edit", edit_campaign_path(campaign) %>
-  <td><%= link_to "Delete", campaign_path(campaign, review), :data => {:confirm => "Are you sure?", :method => "delete"} %></td>
+  <tr>
+    <td><%= link_to campaign.name campaign_path(campaign)%></td>
+    <td><%= campaign.type_name %></td>
+    <td><%= campaign.specialization %></td>
+    <td><%= campaign.reviews.count %></td>
+    <td><%= link_to "Edit", edit_campaign_path(campaign) %>
+    <td><%= link_to "Delete", campaign_path(campaign, review), :data => {:confirm => "Are you sure?", :method => "delete"} %></td>
+  </tr>
   <% end %>
 </table>
 
