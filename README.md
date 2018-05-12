@@ -54,27 +54,17 @@ Initial thoughts/plans:
 
 ##### Definitions:
 
-* (reviewer)
-  [PERSONS] or [PERSONAL_PRONOUNS] or [my HOUSEHOLD_PERSONS and I]
-* (article)
-  a/an depending on the following letter
-* (old_place)
-  [PLACE_SIZE PLACE_TYPE] or [PLACE_TYPE] or [SIZE PLACE_TYPE]
-* (new_place)
-  [PLACE_SIZE PLACE_TYPE] or [PLACE_TYPE] or [SIZE PLACE_TYPE]
-* (company)
-  [COMPANY_SYNONYMS] or [campaign.name] (defined by user)
-* (adjective_praise)
-  [ADJECTIVE_PRAISE]
-* (adjective_feeling)
-  [ADJECTIVE_FEELING]
-* (adverb_degree)
-  [ADVERB_DEGREE]
-* (time)
-  [TIME]
-* (household_person)  
-  [HOUSEHOLD_PERSONS]
-* (my/our)
-  [POSSESSIVE_PRONOUNS]
-* (!.)
-  [PUNCTUATION]
+Command | Result
+------------ | -------------
+(reviewer) | [PERSONS] or [PERSONAL_PRONOUNS] or [my HOUSEHOLD_PERSONS and I]
+(article) | a/an depending on the following letter
+(old_place) | [PLACE_SIZE PLACE_TYPE] or [PLACE_TYPE] or [SIZE PLACE_TYPE]
+(new_place) | [PLACE_SIZE PLACE_TYPE] or [PLACE_TYPE] or [SIZE PLACE_TYPE]
+(company) | [COMPANY_SYNONYMS] or [campaign.name] (defined by user)
+(adjective_praise) | [ADJECTIVE_PRAISE]
+(adjective_feeling) | [ADJECTIVE_FEELING]
+(adverb_degree) | [ADVERB_DEGREE]
+(time) | [TIME]
+(household_person) | [HOUSEHOLD_PERSONS]
+(my/our) | [POSSESSIVE_PRONOUNS]
+(!.) | [PUNCTUATION]
