@@ -1,5 +1,9 @@
 # REVIEW GENERATOR
 
+#### Link to demo version
+
+https://floating-hollows-12621.herokuapp.com/users/sign_in
+
 #### Project’s Purpose or Goal:
 
 App (multi-user platform) to allow users generate random positive reviews for their products or services for posting on online platforms and pass the verification algorithms on such platforms as Yelp and Amazon. It will generate feedback based on a few parameters set by the creator of the campaign.
