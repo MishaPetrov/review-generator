@@ -49,3 +49,32 @@ Initial thoughts/plans:
 * We also need to remember to account for length of the review set by the user. Depending on this parameter, we'll be switching structure of the review and add different types of outputted sentences.
 * We'll start by developing the algorithm for moving company reviews and then adjust it to work with other specializations.
 * We should initially split algorithm into 2 separate methods generate_service_review and generate_product_review since the algorithms for these 2 will be different.
+
+#### Algorithm for generating sentences:
+
+##### Definitions:
+
+* (reviewer)
+  [PERSONS] or [PERSONAL_PRONOUNS] or [my HOUSEHOLD_PERSONS and I]
+* (article)
+  a/an depending on the following letter
+* (old_place)
+  [PLACE_SIZE PLACE_TYPE] or [PLACE_TYPE] or [SIZE PLACE_TYPE]
+* (new_place)
+  [PLACE_SIZE PLACE_TYPE] or [PLACE_TYPE] or [SIZE PLACE_TYPE]
+* (company)
+  [COMPANY_SYNONYMS] or [campaign.name] (defined by user)
+* (adjective_praise)
+  [ADJECTIVE_PRAISE]
+* (adjective_feeling)
+  [ADJECTIVE_FEELING]
+* (adverb_degree)
+  [ADVERB_DEGREE]
+* (time)
+  [TIME]
+* (household_person)  
+  [HOUSEHOLD_PERSONS]
+* (my/our)
+  [POSSESSIVE_PRONOUNS]
+* (!.)
+  [PUNCTUATION]
