@@ -48,3 +48,4 @@ Initial thoughts/plans:
 * We'll do the same thing with following sentences
 * We also need to remember to account for length of the review set by the user. Depending on this parameter, we'll be switching structure of the review and add different types of outputted sentences.
 * We'll start by developing the algorithm for moving company reviews and then adjust it to work with other specializations.
+* We should initially split algorithm into 2 separate methods generate_service_review and generate_product_review since the algorithms for these 2 will be different.
