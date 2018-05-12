@@ -19,22 +19,21 @@ class Review < ApplicationRecord
     final_review = ""
     intro = INTRO_SENTENCES.sample
     if intro.include? '(reviewer)'
-      intro.sub! '(reviewer)', PERSONAL_PRONOUNS[rand(0..1)]
+      intro = intro.sub('(reviewer)', PERSONAL_PRONOUNS[rand(0..1)])
     end
     if intro.include? '(old_place)'
-      place = ""
-      place << PLACE_SIZE.sample << " " << PLACE_TYPE.sample
-      intro.sub! '(old_place)', place
+      place = PLACE_SIZE.sample + " " + PLACE_TYPE.sample
+      intro = intro.sub('(old_place)', place)
     end
     if intro.include? '(new_place)'
-      place = ""
-      place << PLACE_SIZE.sample << " " << PLACE_TYPE.sample
-      intro.sub! '(new_place)', place
+      place = PLACE_SIZE.sample + " " + PLACE_TYPE.sample
+      intro = intro.sub('(new_place)', place)
     end
     if intro.include? '(company)'
-      intro.sub! '(company)', campaign.name
+      intro = intro.sub('(company)', campaign.name).capitalize!
     end
     final_review << intro
+    intro = nil
     return final_review
   end
 
